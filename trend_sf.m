@@ -15,7 +15,7 @@ ti = t.';
 mat2(:,2)=ti;
 [Z] = ktaub(mat2, 0.1, 0)
 %[taub tau h sig Z S sigma sen n senplot CIlower CIupper D Dall C3] = ktaub(mat2, 0.1, 0)%caculating pearson correlation
-trd2(i,j) = Z; %correlation value
+trd2(i,j) = Z; %Mann Kendall trend
 %confidence2(i,j) = p; %confidence value 
     end
 end
