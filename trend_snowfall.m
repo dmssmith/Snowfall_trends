@@ -9,7 +9,7 @@ mat1 = snowfall(i,j,:);  % keeping lat long constant , varying temporally
 mat2 = mat1(:);
 t = 1:479;
 ti = t.';
-[r,p] = corr(mat2,ti,'type','kendall') %caculating pearson correlation
+[r,p] = corr(mat2,ti,'type','kendall') %caculating kendall tau-b correlation to check for trend existence
 trd2(i,j) = r; %correlation value
 confidence2(i,j) = p; %confidence value 
     end
